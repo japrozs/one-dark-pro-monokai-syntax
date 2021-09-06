@@ -1,0 +1,340 @@
+// .inkdrop-one-dark-pro-monokai-syntax {
+// }
+
+@base00: #2e3235;
+@base01: #505d64;
+@base02: #606f7a;
+@base03: #707d8b;
+@base04: #a0a4ae;
+@base05: #bdbdbd;
+@base06: #e0e0e0;
+@base-red: #ef5350;
+@base-deeporange: #ff6e40;
+@base-pink: #fa5788;
+@base-yellow: #fdd44c;
+@base-orange: #f78c6a;
+@base-cyan: #4dd0e1;
+@base-indigo: #7186f0;
+@base-purple: #be75c9;
+@base-green: #66bb6a;
+@base-lightgreen: #9ccc65;
+@base-teal: #4db6ac;
+
+.editor {
+    /* Color scheme for code-mirror */
+
+    .CodeMirror {
+        color-profile: sRGB;
+        rendering-intent: auto;
+        color: @base06;
+        background-color: @base00;
+
+        .cm-header {
+            color: @base-yellow;
+        }
+
+        .cm-formatting-header {
+            opacity: 0.5;
+        }
+
+        .cm-atom {
+            color: @base-cyan;
+        }
+
+        // .cm-number {
+        //   color: @base-orange;
+        // }
+
+        .cm-property {
+            color: @base-yellow;
+        }
+
+        .cm-def {
+            color: @base-pink;
+        }
+
+        // .cm-operator {
+        //   color: @base-cyan;
+        // }
+
+        .cm-variable {
+            color: @base-indigo;
+        }
+
+        // .cm-variable-2 { color: @base-cyan; }
+        // .cm-variable-3 { color: @base-lightgreen; }
+        .cm-tag {
+            color: @base-deeporange;
+        }
+
+        .cm-keyword {
+            color: @base-purple;
+        }
+
+        // .cm-keyword セレクタの影響で3段目のリストの色も変わってしまう現象を回避
+        .cm-formatting + .cm-keyword {
+            color: @base06;
+        }
+
+        .cm-keyword + .cm-keyword {
+            color: @base06;
+        }
+
+        // Bulleted list
+        .cm-variable-2.cm-formatting-list-ul {
+            color: @base-yellow;
+        }
+
+        .cm-variable-3.cm-formatting-list-ul {
+            color: @base-deeporange;
+        }
+
+        .cm-keyword.cm-formatting-list-ul {
+            color: @base-cyan;
+        }
+
+        // Num list
+        .cm-formatting-list-ol {
+            color: @base-indigo;
+        }
+
+        // Unchecked task box
+        .cm-formatting.cm-formatting-task.cm-meta {
+            color: @base04;
+        }
+
+        // Comment
+        .cm-comment {
+            color: @base03;
+        }
+
+        //Code
+        .cm-inline-code {
+            color: @base05;
+        }
+
+        // Code block symbol
+        .cm-formatting-code,
+        .cm-formatting-code-block {
+            color: @base04;
+        }
+
+        .cm-quote {
+            color: @base-purple;
+            font-style: italic;
+        }
+
+        .cm-string {
+            color: @base-lightgreen;
+        }
+
+        .cm-string-2 {
+            color: @base-teal;
+        }
+
+        .cm-meta {
+            color: @base03;
+        }
+
+        .cm-qualifier {
+            color: @base-purple;
+        }
+
+        .cm-builtin {
+            color: @base-purple;
+        }
+
+        .CodeMirror-matchingbracket {
+            color: @base06;
+            outline: solid 1px @base-teal;
+        }
+
+        .CodeMirror-nonmatchingbracket {
+            color: @base-red;
+        }
+
+        .cm-attribute {
+            color: @base-purple;
+        }
+
+        .CodeMirror-widget {
+            text-shadow: none;
+        }
+
+        // Horizontal line and table line
+        .cm-hr {
+            color: @base-cyan;
+        }
+
+        .cm-table-sep,
+        .table-row.table-row-1 {
+            color: @base04;
+        }
+
+        // Link
+        .cm-url {
+            cursor: pointer;
+        }
+
+        .cm-link {
+            text-decoration: none;
+        }
+
+        .cm-keyword.cm-link,
+        .cm-link,
+        .cm-url {
+            color: @base-teal;
+        }
+
+        .cm-string.cm-url {
+            color: @base-teal;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .cm-keyword.cm-em,
+        .cm-em {
+            font-style: italic;
+            color: @base-lightgreen;
+        }
+
+        .cm-keyword.cm-strong,
+        .cm-strong {
+            color: @base-deeporange;
+        }
+
+        .cm-formatting-strong,
+        .cm-formatting-em {
+            opacity: 0.6;
+        }
+
+        .cm-special {
+            color: @base-purple;
+        }
+
+        .cm-error,
+        .cm-invalidchar {
+            color: @base-red;
+            border-bottom: 1px dotted @base-red;
+        }
+
+        .cm-whitespace::before {
+            color: @base04;
+            opacity: 0.4;
+        }
+
+        // carriage return
+        .CodeMirror-code > div > pre > span::after,
+        .CodeMirror-line > span::after {
+            color: @base04;
+            opacity: 0.4;
+        }
+
+        .CodeMirror-selected {
+            // Highlighed text
+            background-color: @base01;
+        }
+
+        .CodeMirror-placeholder {
+            color: @base03;
+        }
+
+        /* Active Line Highlight support */
+        .CodeMirror-activeline {
+            .CodeMirror-activeline-background,
+            .CodeMirror-activeline-gutter {
+                background-color: fade(@base03, 20%) !important;
+            }
+            .CodeMirror-linenumber {
+                color: @base06;
+            }
+        }
+    }
+
+    //  .CodeMirror div.CodeMirror-selected { background: @base02; }
+    //  .CodeMirror.CodeMirror                          ::selection { background: rgba(87, 96, 109, 0.99); }
+    //  .CodeMirror .CodeMirror-line                    ::-moz-selection,  .CodeMirror-line > span::-moz-selection,  .CodeMirror-line > span > span::-moz-selection { background: rgba(87, 96, 109, 0.99); }
+
+    /* Editor styling */
+
+    /* Little shadow on the view-port of the buffer view */
+    .CodeMirror {
+        -moz-box-shadow: inset 7px 0 12px -6px #000;
+        -webkit-box-shadow: inset 7px 0 12px -6px #000;
+        box-shadow: inset 7px 0 12px -6px #000;
+    }
+
+    /* Gutter border and some shadow from it  */
+    .CodeMirror .CodeMirror-gutters {
+        border-right: 1px solid;
+    }
+
+    /* Gutter colors and line number styling based of color scheme (dark / light) */
+
+    /* Dark */
+    .CodeMirror .CodeMirror-gutters {
+        background-color: @base00;
+        border-color: #4f5b66;
+    }
+
+    /* Common */
+    .CodeMirror .CodeMirror-linenumber {
+        color: @base02;
+        padding: 0 5px;
+    }
+
+    .CodeMirror .CodeMirror-guttermarker-subtle {
+        color: @base03;
+    }
+
+    .CodeMirror .CodeMirror-guttermarker {
+        color: #ddd;
+    }
+
+    .CodeMirror .CodeMirror-gutter .CodeMirror-gutter-text {
+        color: @base03;
+    }
+
+    .CodeMirror .CodeMirror-cursor {
+        border-left: 2px solid #ffe9a0;
+    }
+
+    /*
+	Active line. Negative margin compensates left padding of the text in the
+	view-port
+	*/
+    .CodeMirror .CodeMirror-activeline-background {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .cm-searching {
+        // Ctrl + F results
+        border: 1px solid @base-yellow;
+        padding: 2px;
+        color: white !important;
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-linewidget img.inline-widget {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .cm-inline-code:not(.cm-formatting-code),
+    .gfm-codeblock-bg:not(.gfm-codeblock-begin-bg):not(.gfm-codeblock-end-bg) {
+        background: rgba(0, 0, 0, 0.15);
+    }
+
+    .cm-inline-code:not(.cm-formatting-code) {
+        border: solid 1px rgba(255, 255, 255, 0.15);
+        border-radius: 0.25em;
+        padding: 0.1em 0;
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+}
+
+body:not(.platform-darwin) .editor {
+    .CodeMirror-vscrollbar {
+        background: @base00;
+    }
+}

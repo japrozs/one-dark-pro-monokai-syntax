@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    ".CodeMirror": [
+      {
+        "label": "Toggle inkdrop-one-dark-pro-monokai-syntax",
+        "command": "inkdrop-one-dark-pro-monokai-syntax:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Plugins",
+      "submenu": [
+        {
+          "label": "inkdrop-one-dark-pro-monokai-syntax",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "inkdrop-one-dark-pro-monokai-syntax:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
