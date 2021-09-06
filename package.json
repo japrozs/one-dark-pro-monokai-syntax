@@ -3,13 +3,13 @@
     "version": "0.0.0",
     "description": "One dark pro monokai syntax theme",
     "keywords": [],
-    "repository": "https://github.com/japrozs/inkdrop-one-dark-pro-monokai-syntax",
+    "repository": "https://github.com/japrozs/one-dark-pro-monokai-syntax",
     "license": "MIT",
     "engines": {
         "inkdrop": "^5.3.1"
     },
     "styleSheets": [
-        "inkdrop-one-dark-pro-monokai-syntax.less"
+        "one-dark-pro-monokai-syntax.less"
     ],
     "dependencies": {}
 }
