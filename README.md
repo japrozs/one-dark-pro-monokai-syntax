@@ -3,4 +3,4 @@
 ## Screenshot
 ![Screenshot](/assets/screenshot_inkdrop.png)
 
-### Check out my personal website at [japrozsaini.me](www.japrozsaini.me)
+### Check out my personal website at [japrozsaini.me](https://www.japrozsaini.me)
